@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Кротько](https://up.htmlacademy.ru/adaptive/20/user/559959).
-* Наставник: `Неизвестно`.
+* Наставник: `Кексобот`.
 
 ---
 
