@@ -1,12 +1,352 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Погнали?</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="">
+      <img src="img/logo.png" width="95" height="15" alt="Погнали?">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="vissualy-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav_wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="forms.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login js-login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="main-nav__contacts contacts">
+          <li class="contacts__item">
+            <a class="phone" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a class="email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__social social">
+          <li class="social__item"><a class="social__link social__link--facebook"
+              href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a></li>
+          <li class="social__item"><a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+              aria-label="Мы в Вконтакте"></a></li>
+          <li class="social__item"><a class="social__link social__link--instagram"
+              href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-header__title">В путешествие
+      с крутыми попутчиками!</h1>
+    <ul class="page-header__contacts contacts">
+      <li class="contacts__item">
+        <a class="phone" href="tel:88005558628">8 800 555-86-28</a>
+      </li>
+      <li class="contacts__item">
+        <a class="email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__login js-login" href="login.html">Авторизация</a>
+      </li>
+    </ul>
+    <section class="review">
+      <p class="rewiew__text">«Лучшее приложение,
+        что я видел в жизни!»</p>
+      <p class="rewiew__author">Мурат Эльтазин главный редактор
+        газеты «гаджетлайф»</p>
+    </section>
+  </header>
+  <main class="page-main">
+    <section class="intro">
+      <h2 class="vissually-hidden">Порядок действий при выборе попутчиков</h2>
+      <ul class="intro__list">
+        <li class="intro__item">
+          <p class="intro__text">
+            Выберите направление
+          </p>
+          <p class="intro__num">
+            1
+          </p>
+        </li>
+        <li>
+          <p class="intro__text">
+            Изучите идеи путешественников
+          </p>
+          <p class="intro__num">
+            2
+          </p>
+        </li>
+        <li>
+          <p class="intro__text">
+            Находите тех, кто похож на вас
+          </p>
+          <p class="intro__num">
+            3
+          </p>
+        </li>
+        <li>
+          <p class="intro__text">
+            Путешествуйте вместе!
+          </p>
+          <p class="intro__num">
+            4
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="about">
+      <h2 class="about__title">О сервисе</h2>
+      <p class="about__text">Любое путешествие веселее
+        с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+        чужих.
+      <p>
+      <p class="about__announce">А если найдете кого-то
+        близкого по духу — скорее
+        зовите в совместный трип!
+      </p>
+    </section>
+    <section class="directions">
+      <h2 class="directions__title">
+        Направления
+      </h2>
+      <p class="directions__text">
+        Мы не продаем туры
+        и ничего не рекламируем.
+        Люди сами пишут о странах, куда хотели бы отправиться
+        и чем можно там заняться.
+      </p>
+      <ul class="directions__list">
+        <li class="directions__item ">
+          <img class="directions__img" src="/source/img/thailand-mobile@1x.jpg" alt="Тайланд">
+          <dl class="directions__descr thailand">
+            <dt class="directions__name">Тайланд</dt>
+            <dd class="directions__count">18321</dd>
+            <dd class="directions__announce">Джунгли зовут!</dd>
+          </dl>
+        </li>
+        <li class="directions__item">
+          <img class="directions__img" src="/source/img/france-mobile@1x.jpg" alt="Франция">
+          <dl class="directions__descr france">
+            <dt class="directions__name">Франция</dt>
+            <dd class="directions__count">12518</dd>
+            <dd class="directions__announce">Трэ бьен, манифик!</dd>
+          </dl>
+        </li>
+        <li class="directions__item">
+          <img class="directionss__img" src="/source/img/czech-mobile@1x.jpg" alt="Чехия">
+          <dl class="directions__descr  czech">
+            <dt class="directions__name">Чехия</dt>
+            <dd class="directions__count">5326</dd>
+            <dd class="directions__announce">Закоулки старой Европы </dd>
+          </dl>
+        </li>
+      </ul>
+      <button class="directions__button btn" type="button">Показать все</button>
+    </section>
+    <section class="travelers">
+      <h2 class="travelers__title">
+        Попутчики
+      </h2>
+      <p class="travelers__text">
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
+        для хайкинга.
+      </p>
+      <p class="travelers__announce">Теперь можно легко найти единомышленников!</p>
+      <ul class="travelers__list">
+        <li class="travelers__item">
+          <ul class="traveler-card">
+            <li class="traveler-card__picture">
+              <img src="/source/img/firsova-desktop@1x.jpg" width="270" height="270" alt="Путешественник"></li>
+            <li class="traveler-card__level">
+              <p>99</p>
+              <p>level</p>
+            </li>
+            <li class="traveler-card__countries-flags">
+              <div class="traveler-card__flag shri-lanka-flag"></div>
+              <div class="traveler-card__flag tailand-flag"></div>
+              <div class="traveler-card__flag seychelles-flag"></div>
+            </li>
+            <li class="traveler-card__desc">
+              <h3 class="traveler-card__title">Таня Фирсова</h3>
+              <p class="traveler-card__tags">#30Ж #ПП #Фитнес #пляж<br> #авокадо #смузи</p>
+              <div class="traveler-card__trip-ways">
+                <div class="traveler-card__fly fly"><svg width="19" height="21" viewBox="0 0 19 21">
+                    <path fill="#d9d9d9"
+                      d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                                          c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                                          C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                                          c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                                          c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                                          c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                                          c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                  </svg></div>
+                <div class="traveler-card__bus"><svg width="17" height="21" viewBox="0 0 17 21">
+                    <path fill="#d9d9d9"
+                      d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                                          c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                                          C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                                          M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                                          H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                  </svg></div>
+                <div class="traveler-card__bike"><svg width="29" height="21" viewBox="0 0 24 21">
+                    <path fill="#d9d9d9" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                                          S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                                          l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                                          l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                                          s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                  </svg></div>
+                <div class="traveler-card__afoot"><svg width="20" height="21" viewBox="0 0 19 21">
+                    <g>
+                      <ellipse fill="#d9d9d9" cx="14.3" cy="2" rx="2.1" ry="2" />
+                      <path fill="#d9d9d9" d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                                             C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                                             c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                                             c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                                             z" />
+                    </g>
+                  </svg></div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="travelers__item">
+          <ul class="traveler-card">
+            <li class="traveler-card__picture">
+              <img src="/source/img/demin-desktop@1x.jpg" width="270" height="270" alt="Путешественник"></li>
+            <li class="traveler-card__level">
+              <p>80</p>
+              <p>level</p>
+            <li class="traveler-card__countries-flags">
+              <div class="traveler-card__flag germany-flag"></div>
+              <div class="traveler-card__flag chech-flag"></div>
+            </li>
+            <li class="traveler-card__desc">
+              <h3 class="traveler-card__title">Петя Демин</h3>
+              <p class="traveler-card__tags">#Бургер #бар #футбол<br> #концерт #крафт </p>
+              <div class="traveler-card__trip-ways">
+                <div class="traveler-card__fly fly"><svg width="19" height="21" viewBox="0 0 19 21">
+                    <path fill="#d9d9d9"
+                      d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                                          c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                                          C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                                          c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                                          c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                                          c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                                          c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z" />
+                  </svg></div>
+                <div class="traveler-card__bus bus"><svg width="17" height="21" viewBox="0 0 17 21">
+                    <path fill="#d9d9d9"
+                      d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                                           c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                                           C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                                           M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                                           H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z" />
+                  </svg></div>
+                <div class="traveler-card__bike"><svg width="29" height="21" viewBox="0 0 24 21">
+                    <path fill="#d9d9d9" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                                          S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                                          l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                                          l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                                          s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z" />
+                  </svg></div>
+                <div class="traveler-card__afoot afoot"><svg width="20" height="21" viewBox="0 0 19 21">
+                    <g>
+                      <ellipse fill="#d9d9d9" cx="14.3" cy="2" rx="2.1" ry="2" />
+                      <path fill="#d9d9d9" d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                                            C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                                            c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                                            c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                                            z" />
+                    </g>
+                  </svg></div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button class="travelers__button btn" type="button">Показать всех</button>
+    </section>
+    <section class="rates">
+      <h2 class="vissually-hidden">Список тарифов предоставляемых сервисом</h2>
+      <p class="rates__title">Добавьте свой профиль</p>
+      <ul class="rates__list">
+        <li class="rates__item">
+          <p>Базовое размещение Бесплатно</p>
+          <p class="rates__num-1">1</p>
+        </li>
+        <li class="rates__item">
+          <p>Вывод на первых позициях
+            99 руб./мес</p>
+          <p class="rates__num-2">2</p>
+        </li>
+        <li class="rates__item">
+          <p>Кастомный цвет карточки
+            59 руб./мес</p>
+          <p class="rates__num-3">3</p>
+        </li>
+      </ul>
+      <button class="rates__button" type="button">Показать тарифы для бизнеса</button>
+    </section>
+    <section class="registry">
+      <h2 class="vissually-hidden">Форма быстрой регистрации</h2>
+      <p class="registry__title">Заинтересовались?</p>
+      <p class="registry__text">Зарегистрируйтесь,
+        это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее <a href="autorisation-form.html">авторизуйтесь.</a></p>
+      <form action="." class="registry__string">
+        <input class="registry__field" type="email" name="email" placeholder="E-mail">
+        <button class="registry__button" type="submit"> </button>
+      </form>
+      <p class="registry__text">Остались вопросы?<br>
+        Мы с радостью на них ответим!</p>
+      <p class="registry__item"><a class="phone" href="tel:88005558628">8 800 555-86-28</a></p>
+      <p class="registry__item"><a class="email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+    </section>
+    <section class="route">
+      <p class="route__addr">ул. Большая
+        Конюшенная, 19/8</p>
+      <button class="route__button btn" type="button">Проложить маршрут</button>
+      <div class="route__map"><img src="/source/img/map.jpg" alt="ул. Большая Конюшенная, 19/8"></div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <img class=" logo page-footer__logo" src="img/logo-mobile-blue@1x.png">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--footer social__link--facebook"
+            href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--footer social__link--vkontakte" href="https://vk.com/htmlacademy"
+            aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--footer social__link--instagram"
+            href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"><img
+          src="/source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+    </div>
+  </footer>
+</body>
+
 </html>
