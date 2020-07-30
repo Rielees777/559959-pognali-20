@@ -3,32 +3,34 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="/source/css/normalize.css">
+  <link rel="stylesheet" href="/source/css/style.css">
   <title>Погнали?</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="">
-      <img src="img/logo.png" width="95" height="15" alt="Погнали?">
+    <a class="page-header__logo" href="#">
+      <img src="img/logo-mobile-white@1x.png" width="95" height="19" alt="Погнали?">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="vissualy-hidden">Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav_wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>О сервисе</a>
+            <a class="site-list__link">О сервисе</a>
           </li>
           <li class="site-list__item">
-            <a href="forms.html">Направления</a>
+            <a class="site-list__link" href="forms.html">Направления</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Попутчики</a>
+            <a class="site-list__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
-          <li class="user-list__item">
+          <li class="user-list__item button">
             <a class="user-list__login js-login" href="login.html">Авторизация</a>
           </li>
         </ul>
@@ -54,53 +56,55 @@
       с крутыми попутчиками!</h1>
     <ul class="page-header__contacts contacts">
       <li class="contacts__item">
-        <a class="phone" href="tel:88005558628">8 800 555-86-28</a>
+        <a class="phone" href="tel:88005558628"></a>
       </li>
       <li class="contacts__item">
-        <a class="email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="email" href="email:mail@htmlacademy.ru"></a>
       </li>
-      <li class="contacts__item">
+      <li class="contacts__item button">
         <a class="contacts__login js-login" href="login.html">Авторизация</a>
       </li>
     </ul>
-    <section class="review">
-      <p class="rewiew__text">«Лучшее приложение,
-        что я видел в жизни!»</p>
-      <p class="rewiew__author">Мурат Эльтазин главный редактор
-        газеты «гаджетлайф»</p>
-    </section>
   </header>
   <main class="page-main">
+    <section class="review">
+      <p class="review__text">«Лучшее приложение,
+        что я видел в жизни!»</p>
+      <p class="review__author">Мурат Эльтазин главный редактор
+        газеты «гаджетлайф»</p>
+    </section>
     <section class="intro">
-      <h2 class="vissually-hidden">Порядок действий при выборе попутчиков</h2>
+      <div class="intro__bg">
+      </div>
+      <h2 class="visually-hidden">Порядок действий при выборе попутчиков</h2>
       <ul class="intro__list">
         <li class="intro__item">
           <p class="intro__text">
-            Выберите направление
+            Выберите<br> направление
           </p>
           <p class="intro__num">
             1
           </p>
         </li>
-        <li>
+        <li class="intro__item">
           <p class="intro__text">
-            Изучите идеи путешественников
+            Изучите идеи<br> путешественников
           </p>
           <p class="intro__num">
             2
           </p>
         </li>
-        <li>
+        <li class="intro__item">
           <p class="intro__text">
-            Находите тех, кто похож на вас
+            Находите тех,<br> кто похож на вас
           </p>
           <p class="intro__num">
             3
           </p>
         </li>
-        <li>
+        <li class="intro__item">
           <p class="intro__text">
-            Путешествуйте вместе!
+            Путешествуйте<br> вместе!
           </p>
           <p class="intro__num">
             4
@@ -120,6 +124,7 @@
       </p>
     </section>
     <section class="directions">
+      <div class="directions__bg"></div>
       <h2 class="directions__title">
         Направления
       </h2>
@@ -175,7 +180,7 @@
               <p>99</p>
               <p>level</p>
             </li>
-            <li class="traveler-card__countries-flags">
+            <li class="traveler-card__ways">
               <div class="traveler-card__flag shri-lanka-flag"></div>
               <div class="traveler-card__flag tailand-flag"></div>
               <div class="traveler-card__flag seychelles-flag"></div>
@@ -183,7 +188,7 @@
             <li class="traveler-card__desc">
               <h3 class="traveler-card__title">Таня Фирсова</h3>
               <p class="traveler-card__tags">#30Ж #ПП #Фитнес #пляж<br> #авокадо #смузи</p>
-              <div class="traveler-card__trip-ways">
+              <div class="traveler-card__transport">
                 <div class="traveler-card__fly fly"><svg width="19" height="21" viewBox="0 0 19 21">
                     <path fill="#d9d9d9"
                       d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -230,14 +235,14 @@
             <li class="traveler-card__level">
               <p>80</p>
               <p>level</p>
-            <li class="traveler-card__countries-flags">
+            <li class="traveler-card__ways">
               <div class="traveler-card__flag germany-flag"></div>
               <div class="traveler-card__flag chech-flag"></div>
             </li>
             <li class="traveler-card__desc">
               <h3 class="traveler-card__title">Петя Демин</h3>
               <p class="traveler-card__tags">#Бургер #бар #футбол<br> #концерт #крафт </p>
-              <div class="traveler-card__trip-ways">
+              <div class="traveler-card__transport">
                 <div class="traveler-card__fly fly"><svg width="19" height="21" viewBox="0 0 19 21">
                     <path fill="#d9d9d9"
                       d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -281,7 +286,7 @@
       <button class="travelers__button btn" type="button">Показать всех</button>
     </section>
     <section class="rates">
-      <h2 class="vissually-hidden">Список тарифов предоставляемых сервисом</h2>
+      <h2 class="visually-hidden">Список тарифов предоставляемых сервисом</h2>
       <p class="rates__title">Добавьте свой профиль</p>
       <ul class="rates__list">
         <li class="rates__item">
@@ -302,7 +307,7 @@
       <button class="rates__button" type="button">Показать тарифы для бизнеса</button>
     </section>
     <section class="registry">
-      <h2 class="vissually-hidden">Форма быстрой регистрации</h2>
+      <h2 class="visually-hidden">Форма быстрой регистрации</h2>
       <p class="registry__title">Заинтересовались?</p>
       <p class="registry__text">Зарегистрируйтесь,
         это быстро и бесплатно!
@@ -317,11 +322,11 @@
       <p class="registry__item"><a class="email" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
     </section>
     <section class="route">
-      <p class="route__addr">ул. Большая
+      <p class="route__addr">ул. Большая<br>
         Конюшенная, 19/8</p>
       <button class="route__button btn" type="button">Проложить маршрут</button>
-      <div class="route__map"><img src="/source/img/map.jpg" alt="ул. Большая Конюшенная, 19/8"></div>
     </section>
+    <div class="map"><img src="#" alt="ул. Большая Конюшенная, 19/8"></div>
   </main>
   <footer class="page-footer">
     <img class=" logo page-footer__logo" src="img/logo-mobile-blue@1x.png">
@@ -342,9 +347,9 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"><img
-          src="/source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+      <p class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"><img
+            src="/source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
     </div>
   </footer>
 </body>

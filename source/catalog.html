@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page-catalog" lang="ru">
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="/source/css/normalize.css">
+  <link rel="stylesheet" href="/source/css/style.css">
   <title>Погнали?</title>
 </head>
 
-<body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo" href="">
-      <img src="img/logo.png" width="95" height="15" alt="Погнали?">
+<body class="page-catalog__body">
+  <header class="page-catalog__header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo-mobile-white@1x.png" width="95" height="19" alt="Погнали?">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="vissualy-hidden">Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
     </nav>
+    <div class="page-catalog__title">Попутчики</div>
   </header>
   <main class="page-main">
     <ul class="catalog-list">
       <li class="catalog-list__item traveler-card">
         <dl class="traveler-card__traveler">
-          <dt class="traveler-card__name">Татьяна Фирсова</dt>
-          <dd class="traveler-card__image"><img class="traveler-card__photo" src="#" alt="Фирсова"></dd>
+          <dt class="traveler-card__title">Татьяна Фирсова</dt>
+          <dd class="traveler-card__image"><img class="traveler-card__photo" src="img/firsova-mobile@1x.jpg" width="70"
+              height="70" alt="Фирсова"></dd>
           <dd class="traveler-card__subscribers">1,5 М</dd>
-          <dd class="traveler-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</dd>
+          <dd class="traveler-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</dd>
         </dl>
         <dl class="traveler-card__ways">
           <dt class="traveler-card__wishes">хочет посетить:</dt>
@@ -43,13 +47,16 @@
           <dt class="traveler-card__level-title">левел:</dt>
           <dd class="traveler-card__level-num">99</dd>
         </dl>
+        <button class="traveler-card__btn">Позвать!</button>
       </li>
       <li class="catalog-list__item traveler-card">
         <dl class="traveler-card__traveler">
-          <dt class="traveler-card__name">Петя Демин</dt>
-          <dd class="traveler-card__image"><img class="traveler-card__photo" src="#" alt="Демин"></dd>
+          <dt class="traveler-card__title">Петя Демин</dt>
+          <dd class="traveler-card__image"><img class="traveler-card__photo" src="img/demin-mobile@1x.jpg" width="70"
+              height="70" alt="Демин">
+          </dd>
           <dd class="traveler-card__subscribers">1500</dd>
-          <dd class="traveler-card__hashtags">#бургер #бар #футбол #концерт #крафт</dd>
+          <dd class="traveler-card__tags">#бургер #бар #футбол #концерт #крафт</dd>
         </dl>
         <dl class="traveler-card__ways">
           <dt class="traveler-card__wishes">хочет посетить:</dt>
@@ -67,13 +74,15 @@
           <dt class="traveler-card__level-title">левел:</dt>
           <dd class="traveler-card__level-num">80</dd>
         </dl>
+        <button class="traveler-card__btn">Позвать!</button>
       </li>
       <li class="catalog-list__item traveler-card">
         <dl class="traveler-card__traveler">
-          <dt class="traveler-card__name">Марк Смолов</dt>
-          <dd class="traveler-card__image"><img class="traveler-card__photo" src="#" alt="Смолов"></dd>
+          <dt class="traveler-card__title">Марк Смолов</dt>
+          <dd class="traveler-card__image"><img class="traveler-card__photo" src="img/smolov-mobile@1x.jpg" width="70"
+              height="70" alt="Смолов"></dd>
           <dd class="traveler-card__subscribers">170</dd>
-          <dd class="traveler-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</dd>
+          <dd class="traveler-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</dd>
         </dl>
         <dl class="traveler-card__ways">
           <dt class="traveler-card__wishes">хочет посетить:</dt>
@@ -92,13 +101,15 @@
           <dt class="traveler-card__level-title">левел:</dt>
           <dd class="traveler-card__level-num">25</dd>
         </dl>
+        <button class="traveler-card__btn">Позвать!</button>
       </li>
       <li class="catalog-list__item traveler-card">
         <dl class="traveler-card__traveler">
           <dt class="traveler-card__name">Лариса Роговая</dt>
-          <dd class="traveler-card__image"><img class="traveler-card__photo" src="#" alt="Роговая"></dd>
+          <dd class="traveler-card__image"><img class="traveler-card__photo" src="img/rogovaya-mobile@1x.jpg" width="70"
+              height="70" alt="Роговая"></dd>
           <dd class="traveler-card__subscribers">23</dd>
-          <dd class="traveler-card__hashtags">#образование #карьера #учеба #линкедин</dd>
+          <dd class="traveler-card__tags">#образование #карьера #учеба #линкедин</dd>
         </dl>
         <dl class="traveler-card__ways">
           <dt class="traveler-card__wishes">Хочет посетить:</dt>
@@ -116,6 +127,7 @@
           <dt class="traveler-card__level-title">левел:</dt>
           <dd class="traveler-card__level-num">50</dd>
         </dl>
+        <button class="traveler-card__btn">Позвать!</button>
       </li>
       <li class="catalog-list__item">
         <button class="button button--show-more" type="button">показать ещё</button>
