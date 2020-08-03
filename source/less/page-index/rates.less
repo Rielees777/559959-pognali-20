@@ -15,12 +15,19 @@
   line-height: 24px;
   font-weight: bold;
   color: @orange-color;
+  @media (min-width: @tablet-width) {
+    width: 500px;
+  }
 }
 .rates__list {
   list-style: none;
 }
 .rates__item {
   font-weight: 300;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .rates__num-1,
 .rates__num-2,
@@ -36,16 +43,33 @@
   color: white;
 
   background-color: @orange-color;
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+.rates__text {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    align-self: center;
+  }
+}
+.rates__cost {
+  @media (min-width: @tablet-width) {
+    order: 3;
+    align-self: center;
+  }
 }
 .rates__button {
   display: block;
   margin: 0 auto;
   margin-bottom: 40px;
-  text-align: center;
 
   background: none;
   border: none;
 
   color: #132576;
   font-weight: bold;
+  @media (min-width: @tablet-width) {
+    margin-left: 130px;
+  }
 }

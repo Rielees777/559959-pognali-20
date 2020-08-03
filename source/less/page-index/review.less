@@ -6,6 +6,10 @@
   padding-bottom: 109px;
   text-align: left;
   background-color: @main-color;
+  @media (min-width: @desktop-width) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
 }
 .review__text,
 .review__author {

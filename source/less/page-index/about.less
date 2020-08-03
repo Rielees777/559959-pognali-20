@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   padding-top: 33px;
   padding-left: 49px;
   padding-bottom: 82px;
@@ -11,6 +12,27 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: 6;
+  @media (min-width: @tablet-width) {
+    height: 595px;
+    background-image: none;
+  }
+}
+.about::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 376px;
+    height: 548px;
+    background-image: url(/source/img/about-tablet@1x.png);
+  }
+  @media (min-width: @desktop-width) {
+    top: 45px;
+    width: 630px;
+    height: 665px;
+    background-image: url(/source/img/about-desktop@1x.png);
+  }
 }
 .about__title {
   .offset;

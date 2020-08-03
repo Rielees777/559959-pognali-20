@@ -6,6 +6,32 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 5;
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+.directions__item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+.directions__img {
+  @media (min-width: @tablet-width) {
+    order: 2;
+   }
+}
+.directions__descr {
+  .offset;
+  background-color: white;
+  @media (min-width: @tablet-width) {
+   order: 1;
+  }
 }
 .directions__title {
   .offset;
@@ -26,6 +52,11 @@
 .directions__list {
   .offset;
   list-style: none;
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    margin-top: 88px;
+  }
 }
 .directions__name {
   font-size: 21px;
