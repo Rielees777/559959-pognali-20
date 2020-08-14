@@ -6,29 +6,25 @@
 
   background:@second-color;
 }
-/* .intro__bg {
-  position: absolute;
-  .margin-clean;
-  top: 95px;
-  width: 320px;
-  height: 555px;
-
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background-color:@second-color;
-  z-index: -1;
-} */
  .intro__list {
+   display: grid;
   .offset;
   margin-top: -70px;
   padding-bottom: 39px;
   list-style: none;
-
+  @media (min-width: @tablet-width) {
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 .intro__item {
   display: flex;
   justify-content: space-between;
-  width: 270px;
   background-color: @orange-color;
 
   font-weight: bold;

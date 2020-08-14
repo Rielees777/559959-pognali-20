@@ -7,12 +7,21 @@
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
   z-index: 4;
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
 .travelers__title {
   padding-left: 29px;
 
   color: @orange-color;
   line-height: 24px;
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 .travelers__text,
 .travelers__announce {
@@ -28,4 +37,18 @@
 .travelers__list {
   .offset;
   list-style: none;
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+.travelers__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 50px;
+  }
 }

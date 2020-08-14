@@ -1,11 +1,24 @@
 .main-nav {
-  position: absolute;
-  display: none;
-  width: 320px;
   .margin-clean;
   background-color: white;
+  @media (min-width: @desktop-width) {
+    background: none;
+  }
 }
-
+.main-nav--open {
+  display: block;
+}
 .main-nav__toggle {
   display: none;
+}
+.main-nav__contacts {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+.main-nav__social {
+  list-style: none;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

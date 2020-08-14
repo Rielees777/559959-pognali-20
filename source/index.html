@@ -13,7 +13,7 @@
     <a class="page-header__logo" href="#">
       <img src="img/logo-mobile-white@1x.png" width="95" height="19" alt="Погнали?">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav  main-nav--open">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -65,17 +65,15 @@
         <a class="contacts__login js-login" href="login.html">Авторизация</a>
       </li>
     </ul>
-  </header>
-  <main class="page-main">
-    <section class="review">
-      <p class="review__text">«Лучшее приложение,
+    <section class="page-header__review">
+      <p class="page-header__review-text">«Лучшее приложение,
         что я видел в жизни!»</p>
-      <p class="review__author">Мурат Эльтазин главный редактор
+      <p class="page-header__review-author">Мурат Эльтазин главный редактор
         газеты «гаджетлайф»</p>
     </section>
+  </header>
+  <main class="page-main">
     <section class="intro">
-      <div class="intro__bg">
-      </div>
       <h2 class="visually-hidden">Порядок действий при выборе попутчиков</h2>
       <ul class="intro__list">
         <li class="intro__item">
@@ -124,7 +122,6 @@
       </p>
     </section>
     <section class="directions">
-      <div class="directions__bg"></div>
       <h2 class="directions__title">
         Направления
       </h2>
@@ -152,7 +149,7 @@
           </dl>
         </li>
         <li class="directions__item">
-          <img class="directionss__img" src="/source/img/czech-mobile@1x.jpg" alt="Чехия">
+          <img class="directions__img" src="/source/img/czech-mobile@1x.jpg" alt="Чехия">
           <dl class="directions__descr  czech">
             <dt class="directions__name">Чехия</dt>
             <dd class="directions__count">5326</dd>
@@ -290,17 +287,18 @@
       <p class="rates__title">Добавьте свой профиль</p>
       <ul class="rates__list">
         <li class="rates__item">
-          <p>Базовое размещение Бесплатно</p>
+          <p class="rates__text">Базовое размещение</p>
+          <p class="rates__cost"> Бесплатно</p>
           <p class="rates__num-1">1</p>
         </li>
         <li class="rates__item">
-          <p>Вывод на первых позициях
-            99 руб./мес</p>
+          <p class="rates__text">Вывод на первых позициях</p>
+          <p class="rates__cost">99 руб./мес</p>
           <p class="rates__num-2">2</p>
         </li>
         <li class="rates__item">
-          <p>Кастомный цвет карточки
-            59 руб./мес</p>
+          <p class="rates__text">Кастомный цвет карточки</p>
+          <p class="rates__cost">59 руб./мес</p>
           <p class="rates__num-3">3</p>
         </li>
       </ul>
